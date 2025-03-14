@@ -5,7 +5,7 @@
     --color-primario: #000000;
     --color-secundario: #F6F6F6;
     --color-terciario: #b10000;
-    --color-hover: #272727;
+    --color-hover: #b10000;
 
     --fuente-krona: 'Krona One', sans-serif;
     --fuente-montserrat: 'Montserrat', sans-serif;
@@ -31,16 +31,23 @@ body{
     gap: 80px;
 }
 
-.header__menu__link{
+.header__menu__link {
     font-family: var(--fuente-montserrat);
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--color-terciario);
+    color: var(--color-secundario);
     text-decoration: none;
+    border-radius: 8px;
+    border: 2px solid var(--color-terciario);
+    padding: 8px 8px;
+    transition: background-color 0.8s ease, color 0.8s ease, box-shadow 0.8s ease; 
+    /* Aumentar duración de la  cambiando el ease */
 }
 
-.header__menu__link:hover{
+.header__menu__link:hover {
+
     background-color: var(--color-hover);
+
 }
 
 
@@ -102,6 +109,8 @@ body{
     display: flex;
     justify-content: center;
     gap: 16px;
+    transition: background-color 0.8s ease, color 0.8s ease, box-shadow 0.8s ease; 
+    /* Aumentar duración de la  cambiando el ease */
 }
 
 .presentacion__enlaces__link:hover{
@@ -122,6 +131,7 @@ body{
 }
 .certificado__link:hover{
     background-color: var(--color-hover);
+    color: var(--color-secundario);
 }
 
 .footer{
